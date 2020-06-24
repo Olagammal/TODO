@@ -62,7 +62,8 @@ function removeitem()
 
 function removeallItems(){
     list=ul.children
-    for (let index = 0; index < list.length; index++) {
-        list[index].remove()
+    while(list.length!=0)
+    {
+        ul.removeChild(list[0]);
     }
 }
